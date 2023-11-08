@@ -1,4 +1,4 @@
-// //class
+// class
 // class test{
 // 	constructor(name, apellido){
 // 		this._name = name;
