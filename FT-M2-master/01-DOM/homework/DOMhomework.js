@@ -58,13 +58,13 @@ ToDo.prototype.completeToDo = function() {
 function buildToDo(todo, index) {
   // Tu código acá:
   var toDoShell = document.createElement('div');
-  //creo un nuevo lemento div, la guardo dentro de una variable
+  //creo un nuevo elemento div, la guardo dentro de una variable
   toDoShell.className = 'toDoShell';
   // asigno una clase a toDoShell
   var toDoText = document.createElement('span');
   //creo un elemento span y guardo en una variable
   toDoText.innerHtml = todo.description;
-  //asigno el texto de todo a toDoText
+  //asigno el texto de todo.description a toDoText
   toDoText.id = index;
   //asigno el indice como id a toDoText
   if (todo.complete){
