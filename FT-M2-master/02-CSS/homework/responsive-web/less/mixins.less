@@ -1,1 +1,21 @@
 // Mixins acá
+.flex{
+    display: flex;
+}
+
+.flex-vertical{
+    .flex();
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.flex-horizontal{
+    .flex();
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.btn-mixin(@bg, @color){
+    background-color: @bg;
+    color: @color;
+}   

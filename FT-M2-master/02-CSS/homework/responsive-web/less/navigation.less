@@ -1,1 +1,52 @@
 // Código de Nav acá
+nav{
+    .flex-vertical();
+    align-items: center;
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+
+    h2{
+        color: @nav-font;
+    }
+
+    ul{
+        .flex-horizontal();
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        li + li {
+            margin-left: 2rem;
+
+            // @media @phone{
+            //     margin-left: 1rem;
+            // }
+        }
+
+        li{
+            cursor: pointer;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                border-bottom: 4px solid @ebony-clay;
+                top: 40%;
+                left: 50%;
+                right: 50%;
+                width: 0%;
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+                transition: .3s;
+            }
+            
+            &:hover{
+                &::after{
+                    left: 0%;
+                    right: 0%;
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
