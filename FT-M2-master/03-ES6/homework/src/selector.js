@@ -5,7 +5,7 @@ document.body.children
 recorren e1,children.length[] 
 */
 
-
+//3
 var traverseDomAndCollectElements = function (matchFunc, startEl) {
   var resultSet = [];
 
@@ -30,6 +30,7 @@ for (const child of startEl.children) {
 // Detecta y devuelve el tipo de selector
 // devuelve uno de estos tipos: id, class, tag.class, tag
 
+//1
 var selectorTypeMatcher = function (selector) { // $('#pasgetitle') $('.pagetitle')
   // tu código aquí
    if (typeof selector !== 'string') {
@@ -54,6 +55,7 @@ for( let i = 1; i < selector.length; i++){
 // parametro y devuelve true/false dependiendo si el elemento
 // matchea el selector.
 
+//2
 var matchFunctionMaker = function (selector) {
   // $(".pagetitle")
   var selectorType = selectorTypeMatcher(selector);
